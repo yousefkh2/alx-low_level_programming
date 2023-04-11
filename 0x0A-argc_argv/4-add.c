@@ -1,37 +1,46 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
+#include <string.h>
 
-int is_valid_number(const char *str) {
-    for (int i = 0; str[i] != '\0'; i++) {
-        if (!isdigit(str[i])) {
-            return 0;
-        }
-    }
-    return 1;
-}
+/**
+  * main - Prints the sum of args positive numbers
+  * @argc: argument count
+  * @argv: argument vector
+  *
+  * Return: Always zero
+  */
+int main(int argc, char *argv[])
+{
+	int i;
+	unsigned int k, sum = 0;
+	char *e;
 
-int main(int argc, char *argv[]) {
-    int sum = 0;
+	if (argc > 1)
+	{
+		for (i = 1; i < argc; i++)
+		{
+			e = argv[i];
 
-    // Check for no numbers passed
-    if (argc == 1) {
-        printf("0\n");
-        return 0;
-    }
+			for (k = 0; k < strlen(e); k++)
+			{
+				if (e[k] < 48 || e[k] > 57)
+				{
+					printf("Error\n");
+					return (1);
+				}
+			}
 
-    // Iterate through the arguments, validate and add them
-    for (int i = 1; i < argc; i++) {
-        if (is_valid_number(argv[i])) {
-            sum += atoi(argv[i]);
-        } else {
-            printf("Error\n");
-            return 1;
-        }
-    }
+			sum += atoi(e);
+			e++;
+		}
 
-    // Print the result
-    printf("%d\n", sum);
+		printf("%d\n", sum);
+	}
+	else
+	{
+		printf("0\n");
+	}
 
-    return 0;
+	return (0);
 }
