@@ -3,11 +3,11 @@
 #include "variadic_functions.h"
 
 /**
-  * print_numbers - prints numbers 
-  * @separator: the delimiter between numbers
-  * @n: number of numbers
+  * print_numbers - ...
+  * @separator: ...
+  * @n: ...
   *
-  * Return: nothing
+  * Return: ...
   */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {

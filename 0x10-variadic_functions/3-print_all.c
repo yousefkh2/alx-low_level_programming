@@ -3,8 +3,8 @@
 #include <stdio.h>
 
 /**
-  * print_all - Prings everyting
-  * @format: a conversion specifier to prints
+  * print_all - Prints anything
+  * @format: The conversion specifier to prints
   *
   * Return: Nothing
   */
@@ -55,9 +55,9 @@ void print_a_char(char *separator, va_list args)
 }
 
 /**
-  * print_a_integer - Prints an integer
-  * @separator: a delimiter 
-  * @args: variadic args 
+  * print_a_integer - Prints a character of integer type
+  * @separator: The separator of the character
+  * @args: A list of variadic arguments
   *
   * Return: Nothing
   */
