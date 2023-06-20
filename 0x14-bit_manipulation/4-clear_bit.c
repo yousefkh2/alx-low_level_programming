@@ -1,4 +1,10 @@
- 
+Your answers to items #1 to 6 (The 5Ws + H) on the worksheet. Are the answers clear and complete?
+Your answers items #19 and 20 (problem statement & sources). Specifically, does your problem statement:
+Name the problem succinctly in the first sentence?
+Indicate specific population affected?
+Describe why your problem matters (the impact)?
+Describe what reality would look like if the problem were solved?
+Grammar and any writing errors that you need to correct.
 #include "main.h"
 
 /**
